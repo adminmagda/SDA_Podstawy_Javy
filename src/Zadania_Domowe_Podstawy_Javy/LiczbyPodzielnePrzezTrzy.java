@@ -1,6 +1,6 @@
 package Zadania_Domowe_Podstawy_Javy;
 
-public class Liczby_podzielne_przez_trzy {
+public class LiczbyPodzielnePrzezTrzy {
 
     public static void main(String[] args) {
 

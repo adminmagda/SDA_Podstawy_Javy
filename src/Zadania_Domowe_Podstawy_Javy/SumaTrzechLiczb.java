@@ -2,7 +2,7 @@ package Zadania_Domowe_Podstawy_Javy;
 
 import java.util.Scanner;
 
-public class Suma_trzech_liczb {
+public class SumaTrzechLiczb {
 
     public static void main(String[] args) {
 

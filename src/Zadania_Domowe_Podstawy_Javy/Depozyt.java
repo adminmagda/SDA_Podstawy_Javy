@@ -12,10 +12,11 @@ public class Depozyt {
         double wysokoscPodatkuBelki = 0;
 
         for (int i = 0; i < 48; i++) {
-            System.out.println("Przychód względem poprzedniego miesiąca: " + "depozyt: " + kwotaDepozytu + " (oprocentowanie: " + kwotaDepozytu * miesieczneOprocentowanie + ")");
-            wysokoscPodatkuBelki = kwotaDepozytu * miesieczneOprocentowanie * podatekBelki;
+            double miesiecznyZysk = kwotaDepozytu * miesieczneOprocentowanie;
+            System.out.println("Przychód względem poprzedniego miesiąca: " + "depozyt: " + kwotaDepozytu + " (oprocentowanie: " + miesiecznyZysk + ")");
+            wysokoscPodatkuBelki = miesiecznyZysk * podatekBelki;
             System.out.println("Wysokość podatku Belki: " + wysokoscPodatkuBelki + " pln");
-            kwotaDepozytu = kwotaDepozytu * miesieczneOprocentowanie + kwotaDepozytu;
+            kwotaDepozytu = miesiecznyZysk + kwotaDepozytu;
             System.out.println("Suma depozytu w danym miesiącu: " + kwotaDepozytu + " pln");
             System.out.println("");
             }
